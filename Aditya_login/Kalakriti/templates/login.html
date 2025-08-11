@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Registration</title>
+  <style>
+    * { 
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f6f5f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                  0 10px 10px rgba(0,0,0,0.22);
+      position: relative;
+      overflow: hidden;
+      width: 800px;
+      max-width: 100%;
+      min-height: 500px;
+    }
+    .form-container {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      transition: all 0.6s ease-in-out;
+    }
+    .sign-in-container {
+      left: 0;
+      width: 50%;
+      z-index: 1;
+      opacity: 0;
+    }
+    .sign-up-container {
+      left: 0;
+      width: 50%;
+      z-index: 2;
+    }
+    .container.show-signin .sign-in-container {
+      transform: translateX(100%);
+      opacity: 1;
+      z-index: 5;
+    }
+    .container.show-signin .sign-up-container {
+      transform: translateX(100%);
+      opacity: 0;
+      z-index: 1;
+    }
+    form {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 0 50px;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    input {
+      background-color: #eee;
+      border: none;
+      padding: 12px 15px;
+      margin: 8px 0;
+      width: 100%;
+      border-radius: 8px;
+    }
+    button {
+      border-radius: 20px;
+      border: 1px solid #6c63ff;
+      background-color: #6c63ff;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 12px 45px;
+      letter-spacing: 1px;
+      transition: transform 80ms ease-in;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    button:active {
+      transform: scale(0.95);
+    }
+    button.ghost {
+      background-color: transparent;
+      border-color: #fff;
+    }
+    .overlay-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      transition: transform 0.6s ease-in-out;
+      z-index: 100;
+    }
+    .container.show-signin .overlay-container {
+      transform: translateX(-100%);
+    }
+    .overlay {
+      background: #6c63ff;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      position: relative;
+      left: -100%;
+      height: 100%;
+      width: 200%;
+      transform: translateX(0);
+      transition: transform 0.6s ease-in-out;
+    }
+    .container.show-signin .overlay {
+      transform: translateX(50%);
+    }
+    .overlay-panel {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+      text-align: center;
+      top: 0;
+      height: 100%;
+      width: 50%;
+      transform: translateX(0);
+      transition: transform 0.6s ease-in-out;
+    }
+    .overlay-left {
+      transform: translateX(-20%);
+    }
+    .container.show-signin .overlay-left {
+      transform: translateX(0);
+    }
+    .overlay-right {
+      right: 0;
+      transform: translateX(0);
+    }
+    .container.show-signin .overlay-right {
+      transform: translateX(20%);
+    }
+    h1 {
+      font-weight: bold;
+      margin: 0;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      margin: 20px 0 30px;
+    }
+    .error-message {
+      color: red;
+      font-size: 12px;
+      margin-top: -5px;
+      margin-bottom: 5px;
+      align-self: flex-start;
+    }
+    .success-message {
+      color: #4CAF50;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="container">
+    <!-- Sign Up Form -->
+    <div class="form-container sign-up-container">
+      <form id="signupForm">
+        <h1>Create Account</h1>
+        <div id="signupSuccess" class="success-message hidden">Account created successfully!</div>
+        <input type="text" id="name" placeholder="Name" name="name" />
+        <span id="nameError" class="error-message"></span>
+        <input type="email" id="email" placeholder="Email" required name="email"/>
+        <span id="emailError" class="error-message"></span>
+        <input type="password" id="password" placeholder="Password" name="password"required minlength="6" />
+        <span id="passwordError" class="error-message"></span>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <!-- Sign In Form -->
+    <div class="form-container sign-in-container">
+      <form id="signinForm">
+        <h1>Sign in</h1>
+        <div id="signinSuccess" class="success-message hidden">Welcome back!</div>
+        <input type="email" id="loginEmail" placeholder="Email"name="email" required />
+        <span id="loginEmailError" class="error-message"></span>
+        <input type="password" id="loginPassword" placeholder="Password"name="password" required />
+        <span id="loginPasswordError" class="error-message"></span>
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>Don't have an Account!</p>
+          <button class="ghost" id="signInBtn">Sign Up</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Already have an Account!</p>
+          <button class="ghost" id="signUpBtn">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('container');
+    const signUpBtn = document.getElementById('signUpBtn');
+    const signInBtn = document.getElementById('signInBtn');
+    const signupForm = document.getElementById('signupForm');
+    const signinForm = document.getElementById('signinForm');
+    const signupSuccess = document.getElementById('signupSuccess');
+    const signinSuccess = document.getElementById('signinSuccess');
+
+    signUpBtn.addEventListener('click', showSignInForm);
+    signInBtn.addEventListener('click', showSignUpForm);
+
+    function showSignUpForm() {
+      container.classList.remove('show-signin');
+      signupSuccess.classList.add('hidden');
+    }
+
+    function showSignInForm() {
+      container.classList.add('show-signin');
+      signinSuccess.classList.add('hidden');
+    }
+
+    // ---- SIGN UP (REGISTER) ----
+    signupForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Clear error messages first
+      document.getElementById('nameError').textContent = '';
+      document.getElementById('emailError').textContent = '';
+      document.getElementById('passwordError').textContent = '';
+
+      const formData = new FormData(signupForm);
+
+      fetch('/register', {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === 'success') {
+          signupSuccess.textContent = "Account created successfully!";
+          signupSuccess.classList.remove('hidden');
+
+          // Switch to sign in form after 1 sec
+          setTimeout(() => {
+            showSignInForm();
+            document.getElementById('loginEmail').value = signupForm.email.value;
+            signupForm.reset();
+            signupSuccess.classList.add('hidden');
+          }, 1000);
+        } else {
+          // If backend sends message
+          if (data.message === 'Email already registered') {
+            document.getElementById('emailError').textContent = data.message;
+          } else {
+            alert(data.message);
+          }
+        }
+      })
+      .catch(err => {
+        console.error('Registration error:', err);
+      });
+    });
+
+    // ---- SIGN IN (LOGIN) ----
+    signinForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Clear previous errors
+      document.getElementById('loginEmailError').textContent = '';
+      document.getElementById('loginPasswordError').textContent = '';
+
+      const formData = new FormData(signinForm);
+
+      fetch('/login', {
+        method: 'POST',
+        body: formData
+      })
+      .then(async res => {
+        if (res.status === 200) {
+          // Successful, redirect to home
+          window.location.href = "/home";
+        } else {
+          const data = await res.json();
+          if (data.message) {
+            document.getElementById('loginPasswordError').textContent = data.message;
+          }
+        }
+      })
+      .catch(err => {
+        console.error('Login error:', err);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

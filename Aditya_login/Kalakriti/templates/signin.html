@@ -1,0 +1,150 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>KALAKRITI-Login</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background-image:url('./static/images/image.jpg');
+            }
+            .login-container{
+                position:absolute;
+                left: 60%;
+                top: 50%;
+                transform: translateY(-50%);
+                
+                
+                
+                width: 350px;
+                 
+      max-width: 420px;
+      padding: 30px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      color: #fff;
+                
+                
+      
+            }
+             .input-group input{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size:20px;
+                margin-top:5px;
+                
+                
+            }
+            .input-group label{
+                display: block;
+                margin-bottom: 5px;
+                
+                font-weight:600;
+                
+            }
+           input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border: none;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.8);
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    input::placeholder {
+      color: #777;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #7fbf4d;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #6ca640;
+    }
+
+
+           h2 {
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  color: #ffffff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* For labels like "Username", "Password" */
+label {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);  /* Elegant light text */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Makes text pop over bright background */
+}
+             p{
+                text-align:left;
+                margin-top: 10px;
+                color: black;
+                padding: 5px;
+            }
+            a{
+                text-decoration: none;
+                color: #ffdc64;
+                
+                
+                border-radius: 5px;
+                padding: 3px;
+                margin: 2px;
+                 margin-top: 15px;
+      text-align: center;
+      font-size: 0.9rem;
+      
+      text-shadow: 1px 1px 2px #000;
+                
+            }
+           
+
+
+
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="login-container">
+            <h2>Sign In</h2>
+            <form action="/signin"method="POST">
+                <div class="input-group">
+                    <label style="font-weight: 600;color: #fefefe;"  for="username">Username</lable>
+                    <input type="text" id="username" name="username" required>
+
+                </div><br>
+
+                <div class="input-group">
+                    <label  style="color: white;" for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div><br>
+                <button type="submit">Sign In</button>
+                <p style="text-align: center;">Don't have an account?<a href="/signup">Sign Up</a></p>
+                <p style="text-align: center;">Forgot your password? <a href="/reset-password">Reset it here</a></p>
+
+            </form>
+            </div>
+        
+        
+    </body>
+</html>
