@@ -1,0 +1,256 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: w;
+    src: url(./fonts/WanoQuin-ExtraBold.otf);
+}
+
+/* COLOR VARIABLES */
+:root {
+    --primary-color: #160200;
+    --secondary-color: #535354;
+    --background-color: #EFEFEF;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --white-color: #FFF;
+    --black-color: #000;
+    --input-border-color: #E3E4E6;
+    --transition-3s: 0.3s;
+}
+
+/* GLOBAL STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.checkbox {
+    accent-color: #160200; /* change to your desired color */
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* REUSABLE ELEMENTS */
+a{
+    text-decoration: none;
+    color: var(--black-color);
+    transition: var(--transition-3s);
+}
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("media/loginbg.jpg");
+    background-repeat: no-repeat;      /* no tiling */
+    background-size: cover;           /* fills the container */
+    background-position: center;  
+}
+
+/* WRAPPER */
+.wrapper{
+    margin-top: 110px;
+    position: relative;
+    width: 430px;
+    height: 500px;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 120px 32px 64px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 8px 15px var(--shadow-color);
+    transition: var(--transition-3s);
+    overflow: hidden;
+     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.395);
+    backdrop-filter: blur(100px);      /* glass blur */
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    
+}
+
+
+/* FORM HEADER */
+.form-header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 20px 20px;
+}
+.form-header::before, .form-header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+}
+.form-header::before{
+    left: -30px;
+    border-top-right-radius: 50%;
+    box-shadow: 15px 0 0 var(--primary-color);
+}
+.form-header::after{
+    right: -30px;
+    border-top-left-radius: 50%;
+    box-shadow: -15px 0 0 var(--primary-color);
+}
+/* TITLES */
+.titles{
+    position: relative;
+}
+.title-login, .title-register{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white-color);
+    font-size: 34px;
+    transition: var(--transition-3s);
+    font-family: w;
+}
+.title-register{
+    top: 50px;
+}
+
+/* FORMS */
+.login-form, .register-form{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    transition: var(--transition-3s);
+}
+.register-form{
+    left: 150%;
+}
+
+/* INPUT FIELDS */
+.input-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.input-field{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.779);
+    padding: 0 20px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 30px;
+    outline: none;
+    transition: var(--transition-3s);
+}
+.input-field:focus{
+    border: 1px solid rgba(255, 255, 255, 0.515);
+}
+
+.label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.462);
+    transition: 0.2s;
+    cursor: text;
+}
+.input-field:focus ~ .label,
+.input-field:valid ~ .label{
+    top: 0;
+    font-size: 14px;
+    background-color: #370702c0;
+    color: rgba(255, 255, 255, 0.515);
+    padding: 0 1px;
+}
+.input-field:valid ~ .label{
+    color: rgba(255, 255, 255, 0.515);
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.515);
+}
+/* FORGOT PASSWORD & TERMS AND CONDITIONS */
+.form-cols{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.515);
+
+}
+.col-1{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color:  rgba(255, 255, 255, 0.515);
+}
+
+.form-cols .col-2 a {
+    color:  rgba(255, 255, 255, 0.515);
+    text-decoration: none; /* remove underline if you want */
+    font-weight: 500;      /* make it slightly bold */
+    transition: color 0.3s ease;
+}
+
+.form-cols .col-2 a:hover {
+    color:  rgba(255, 255, 255, 0.686);
+    text-decoration: underline; /* add underline on hover */
+}
+
+/* SUBMIT BUTTON */
+.btn-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition-3s);
+}
+.btn-submit:hover{
+    gap: 15px;
+}
+.btn-submit i{
+    font-size: 20px;
+}
+/* SWITCH FORM */
+.switch-form{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.515);
+
+}
+.switch-form a{
+    color: rgba(255, 255, 255, 0.515);
+    font-weight: 500;
+}
+
+/* RESPONSIVE STYLES */
+@media only screen and (max-width: 564px){
+    .wrapper{
+        margin: 20px;
+    }
+}

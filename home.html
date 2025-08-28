@@ -1,0 +1,2582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KalaKriti | Homepage</title>
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="home2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-main">
+      <div class="container">
+        <a href="#" class="header-logo">
+          <img src="media/logo_word_white.png" >
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+          <button class="circle-wave-btn">Sell Now
+          </button>
+            
+          <button class="action-btn" onclick="location.href='user.html'">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="compass-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline" id="wishlist-btn"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn" id="cart-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          
+
+          <div class="header-top-actions">
+            <select name="language">
+            <option value="en-US">English</option>
+            <option value="es-ES">Hindi</option>
+            <option value="fr">Marathi</option>
+           </select>
+
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Textiles</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Sarees</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Shawls</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Scarves</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Handbags</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Sweater</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-1.jpg" alt="collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Jewelry</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Necklaces</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Earrings</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Bangles</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Kundan</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Pendants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/mens-banner.jpg" alt="collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Décor</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Pottery</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Lanterns</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Baskets</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Utensils</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Kitchenware</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/womens-banner.jpg" alt="collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Wellness</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Soaps</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Oils</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Spices</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Pickles</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Honey</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-2.jpg" alt=" collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Clothing</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Handloom Sarees</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Shawls & Stoles</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Kurtas & Tunics</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Quilts & Blankets</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Accessories</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Tribal Necklaces</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Terracotta Earrings</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Handwoven Belts</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#"> Handbags</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Décor</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Wooden Carvings</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Terracotta Figurines</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Wall Hangings</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Lamps & Lanterns</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Dining</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Earthenware Pots</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bamboo Cutlery</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Ceramic Plates</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Woven Table Mats</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Craft</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Paintings</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Photo Frames</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Journals</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Sculptures</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Wellness</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Organic Soaps</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Herbal Oils</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Natural Perfumes</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Candles</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Pantry</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Handmade Pickles</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#"> Indian Spices </a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Artisanal Jaggery</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Dried Fruits</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Stationery</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Notebooks</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bookmarks</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Envelopes</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Diaries</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Footwear</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Juttis & Mojaris</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Kolhapuri Sandals</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Leather Chappals</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Slippers</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Contact</a>
+          </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+        <header class="wsection__container wheader__container" id="home">
+          <h1>Dive into KalaKriti<br> & take <span>art home </span></h1>         
+          <div class="wheader__btns">
+            <button class="wbtn" onclick="location.href='#about'">SHOP NOW</button>
+          </div>
+        </header>
+
+        
+
+
+        
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <ul class="hero-list">
+
+            <li>
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 285; --height: 396;">
+                  <img src="media/cat4.jpg" width="100%" height="100%" alt="Art Deco Home"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Crafts </a>
+                  </h3>
+
+                  <p class="card-text">Home & Living	</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="colspan-2">
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 568; --height: 389;">
+                  <img src="media/cat8.jpg" width="100%" height="100%" alt="Helen Chair"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Textile</a>
+                  </h3>
+
+                  <p class="card-text">Fashion</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 285; --height: 396;">
+                  <img src="media/cat6.jpg" width="100%" height="100%" alt="Vase Of Flowers"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                   <h3>
+                    <a href="#" class="card-title">Decor</a>
+                  </h3>
+
+                  <p class="card-text">Home & Living	</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="colspan-2">
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                  <img src="media/cat12.jpg" width="100%" alt="Wood Eggs"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Heritage</a>
+                  </h3>
+
+                  <p class="card-text">Decoration</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="colspan-2">
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                  <img src="media/cat13.jpg" width="100%"  alt="Table Wood Pine"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Accessories</a>
+                  </h3>
+
+                  <p class="card-text">Fashion</p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+       <section class="section__container stats__container">
+        <div class="stats__card">
+          <h4>500+</h4>
+          <p>Handcrafted Products</p>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__card">
+          <h4>200+</h4>
+          <p>Skilled Artisans</p>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__card">
+          <h4>100%</h4>
+          <p>Genuine Work</p>
+        </div>
+    </section>
+
+
+      
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="media/icon1.png" alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Footwear</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="arrow-forward-outline" class="add-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="media/icon2.png" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Sweaters</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="arrow-forward-outline" class="add-icon"></ion-icon>
+                  </div>
+
+                </button>
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="media/icon3.png" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Perfumes</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="arrow-forward-outline" class="add-icon"></ion-icon>
+                  </div>
+
+                </button>
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="media/icon4.png" alt="perfume" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Handbags</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="arrow-forward-outline" class="add-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="media/icon5.png" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Accessories</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="arrow-forward-outline" class="add-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="media/icon6.png" alt="glasses" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Decor</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="arrow-forward-outline" class="add-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="media/icon7.png" alt="bags" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Dresses </p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="arrow-forward-outline" class="add-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+              </li>
+
+
+            </ul>
+            <button class="category-button">Show More Categories →</button>
+   
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">sellers near you</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="media/grid10.jpg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Handmade Crochet Sweater</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹1,899.00</del>
+                      <p class="price">₹1,500.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="media/grid17.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Handcrafted Terracotta figures</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹1,000.00</del>
+                      <p class="price">₹799.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="media/grid19b.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Traditional Lantern Made of Metal </h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹1,000.00 </del>
+                      <p class="price">₹789.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="media/grid25b.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Authentic Bamboo Baskets</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹1,299.00</del>
+                      <p class="price">₹999.00 </p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="media/grid22b.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Handcrafted Scented Candle </h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹1,999.00 </del>
+                      <p class="price">₹1,200.00 </p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <button class="showcase-button">Show More Products →</button>
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+          <!--
+            - PRODUCT GRID
+          -->
+
+          
+
+          <div class="product-main">
+            
+
+            <h2 class="title"></h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+                <div class="showcase-banner">
+
+                  <img src="./media/grid1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./media/grid1b.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">BASKET</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Hand Woven Bamboo Basket</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹899.00</p>
+                    <del>₹1,000.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+
+                  <img src="./media/grid2.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./media/grid2b.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">HANDBAG</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Embroidered Designer Handbag</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹2,999.00</p>
+                    <del>₹3,500.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+
+                  <img src="./media/grid3.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./media/grid3b.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">PICKLE</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Handmade Fresh Mango Pickle</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹299.00</p>
+                    <del>₹500.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+
+                  <img src="./media/grid4.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./media/grid4b.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Earring</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Tribal Oxidised Jhumkas</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹499.00</p>
+                    <del>₹750.00</del>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+
+                  <img src="./media/grid5.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./media/grid5b.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Necklace</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Tribal Oxidesed Pendants</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹999.00</p>
+                    <del>₹1,500.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid6.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                    width="300">
+                  <img src="media/grid6b.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                    width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Necklace</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Designer Silver-Plated Necklace</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹2,999.00</p>
+                    <del>₹5,000.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid7.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                    width="300">
+                  <img src="media/grid7b.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Pots</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Hand-Painted Designer Pots</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹1,000.00</p>
+                    <del>₹1,200.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid8.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default"
+                    width="300">
+                  <img src="media/grid8b.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+                    width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Pot</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Designer Carved Wooden Pots</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹899.00</p>
+                    <del>₹1,500.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid9.jpg" alt="Casual Men's Brown shoes" class="product-img default"
+                    width="300">
+                  <img src="media/grid9b.jpg" alt="Casual Men's Brown shoes" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Shawls</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Super-Soft and Comfy Shawls</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹999.00</p>
+                    <del>₹1,500.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid10.jpg" alt="Pocket Watch Leather Pouch" class="product-img default"
+                    width="300">
+                  <img src="media/grid10b.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover"
+                    width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Sweater</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Handmade Crochet Sweater</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹1,500.00</p>
+                    <del>₹1,899.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid11.jpg" alt="Smart watche Vital Plus" class="product-img default"
+                    width="300">
+                  <img src="media/grid11b.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Sandels</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Traditional Kolhapuri Sandels</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹3,000.00</p>
+                    <del>₹3,999.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid12.jpg" alt="Womens Party Wear Shoes" class="product-img default"
+                    width="300">
+                  <img src="media/grid12b.jpg" alt="Womens Party Wear Shoes" class="product-img hover"
+                    width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Diary</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Leather Covered Diarys</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹1,000.00</p>
+                    <del>₹1,500.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid13.jpg" alt="Mens Winter Leathers Jackets" class="product-img default"
+                    width="300">
+                  <img src="media/grid13b.jpg" alt="Mens Winter Leathers Jackets" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Shoes</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Designer Traditional Mojaris</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹1,499.00</p>
+                    <del>₹1,999.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid14.jpg" alt="Trekking & Running Shoes - black" class="product-img default"
+                    width="300">
+                  <img src="media/grid14b.jpg" alt="Trekking & Running Shoes - black" class="product-img hover"
+                    width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Oil</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Traditional Herbal Oil</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹599.00</p>
+                    <del>₹1,000.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid15.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default"
+                    width="300">
+                  <img src="media/grid15b.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Decor</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title"> Handcrafted Dream <Cap></Cap>atcher</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹500.00</p>
+                    <del>₹899.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid16.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid16b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Dining</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Bamboo Cutlery</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹399.00</p>
+                    <del>₹800.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid17.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid17b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Figures</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Handcrafted Terracotta figures</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹799.00</p>
+                    <del>₹1,000.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid18.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid18b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Carpet</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Mirror Work Desginer Carpet</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹1,999.00</p>
+                    <del>₹2,500.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid19.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid19b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Lanterns</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Traditional Lantern Made of Metal</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹789.00</p>
+                    <del>₹1,000.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid20.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid20b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Soaps</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Natural Artisan Soaps</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹299.00</p>
+                    <del>₹500.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid21.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid21b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Crackers</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Crispy Wheat Papads</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹199.00</p>
+                    <del>₹400.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid22.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid22b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Candles</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Handcrafted Scented Candle</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹1,200.00</p>
+                    <del>₹1,999.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid23.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid23b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Spices</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Freshly Ground Spices</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹500.00</p>
+                    <del>₹899.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid24.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid24b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">POTS</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Handcrafted Terracotta Pots</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹1,500.00</p>
+                    <del>₹2,000.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid25.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid25b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Basket</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Authentic Bamboo Baskets</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹999.00</p>
+                    <del>₹1,299.00</del>
+                  </div>
+              
+                </div>
+
+                
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid26.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid26b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Paintings</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Traditional Acrylic Framed Paintings</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹799.00</p>
+                    <del>₹1,100.00</del>
+                  </div>
+              
+                </div>
+
+                
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid27.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid27b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Perfumes</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Long Lasting Organic Perfumes</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹1,999.00</p>
+                    <del>₹3,000.00</del>
+                  </div>
+              
+                </div>
+
+                
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="media/grid28.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="media/grid28b.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Stationery</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Handcrafted Bamboo Bookmarks</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">₹100.00</p>
+                    <del>₹150.00</del>
+                  </div>
+              
+                </div>
+
+                
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+  <div id="toast"></div>
+  
+
+
+    
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="media/logo_word_white.png" width="180" alt="Casmart logo">
+          </a>
+
+          <p class="footer-text">
+            Kalakriti is a curated platform celebrating India’s rich heritage, bringing together authentic handicrafts, textiles, accessories, décor, and nourishing goods.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Company</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Payment Type</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Awards Winning</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">World Media Partner</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Become an Agent</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Category</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Handbags & Wallets</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Women's Clothing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Plus Sizes</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Complete Your Look</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Baby Corner</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Man & Woman Shoe</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Help & Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Dealers & Agents</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ Information</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Return Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping & Delivery</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Order Tranking</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">List of Shops</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+    
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="cart.js"></script>
+  <script src="home.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

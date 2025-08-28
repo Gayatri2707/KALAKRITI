@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: #160200;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.hero h1{
+    font-size: 15vw;
+    line-height: 90%;
+
+}
+
+ 
+.transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    pointer-events: none;
+    visibility: hidden; /* hidden until animation */
+}
+
+.transition-row {
+    flex: 1;
+    display: flex;
+}
+
+.transition-row.row-1 .block {
+    transform-origin: top; /* comes from top */
+}
+
+.transition-row.row-2 .block {
+    transform-origin: bottom; /* comes from bottom */
+}
+
+.block {
+    flex: 1;
+    background-color: #ffffff; /* Solid color to cover content */
+    transform: scaleY(0);
+    will-change: transform;
+}
+
+/* Top row blocks grow from top */
+.row-1 .block {
+    transform-origin: top;
+}
+
+/* Bottom row blocks grow from bottom */
+.row-2 .block {
+    transform-origin: bottom;
+}
